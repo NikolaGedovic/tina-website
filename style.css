@@ -1,4 +1,8 @@
-:root {}
+:root {
+  --my-work-bg-color: #f4f1de;
+  --navbar-footer-bg: #070F2B;
+  --navbar-footer-font: #F8F6F4;
+}
 
 * {
   margin: 0;
@@ -8,12 +12,12 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
+  font-family: "Playfair Display", serif;
 }
 
 header {
   height: 100vh;
   width: 100vw;
-  background-color: #9ba685;
   position: relative;
   z-index: 1;
 }
@@ -21,7 +25,7 @@ header {
 .navbar {
   width: 100%;
   height: 4.5rem;
-  background-color: azure;
+  background-color: var(--navbar-footer-bg);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,21 +41,40 @@ header {
 
 .navbar-list-item {
   list-style-type: none;
+  font-size: 1.27rem;
+}
+
+
+.nav-links {
+  color: var(--navbar-footer-font);
+  display: inline-block;
+  position: relative;
+  padding: .3125rem 0;
+}
+
+.nav-links::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.28s ease 0s, left 0.28s ease 0s;
+  width: 0;
+}
+
+.nav-links:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .navbar-logo {
-  height: 4.375rem;
+  height: 4rem;
   width: auto;
 }
 
-.navbar-list-item {
-  font-size: 1.27rem;
-  border-bottom: 2px solid transparent;
-}
-
-.navbar-list-item:hover {
-  border-bottom: 2px solid black;
-}
 
 /* HERO */
 .wrapper {
@@ -164,4 +187,50 @@ header {
   z-index: 0;
   -o-filter: blur(6px);
   filter: blur(6px);
+}
+
+/* **************** MY WORK SECTION **************** */
+
+.my-work-main {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--my-work-bg-color);
+}
+
+.my-work-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 0;
+  font-size: 3.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.card {
+  width: 700px;
+  height: 500px;
+  border-radius: .5rem;
+  background-color: brown;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card-top {
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-bottom {
+  height: 15%;
+  background-color: white;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
 }
