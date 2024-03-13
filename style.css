@@ -12,7 +12,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", sans-serif;
 }
 
 header {
@@ -26,12 +26,14 @@ header {
   width: 100%;
   height: 4.5rem;
   background-color: var(--navbar-footer-bg);
+  border-bottom: 2px solid #FF7ED4;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 11rem;
   position: relative;
   z-index: 2;
+
 }
 
 .navbar-list-container {
@@ -204,6 +206,7 @@ header {
   align-items: center;
   padding: 7rem 0;
   font-size: 3.5rem;
+  color: var(--navbar-footer-bg);
 }
 
 .cards {
@@ -233,4 +236,88 @@ header {
   background-color: white;
   border-bottom-left-radius: .5rem;
   border-bottom-right-radius: .5rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  background-color: var(--navbar-footer-bg);
+}
+
+.footer-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me-footer>h3 {
+  color: var(--navbar-footer-font);
+  font-size: 1.9rem;
+}
+
+.contact-me-footer>p {
+  width: 300px;
+  color: var(--navbar-footer-font);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  padding-top: 1rem;
+}
+
+.email-footer {
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.email,
+.email-icon {
+  color: var(--navbar-footer-font);
+  padding-top: 2.2rem;
+}
+
+.email-icon {
+  font-size: 2.1rem;
+}
+
+.email {
+  font-size: 1.2rem;
+}
+
+.footer-socials {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding-top: 2.5rem;
+}
+
+.socials {
+  cursor: pointer;
+  color: var(--navbar-footer-font);
+  font-size: 3rem;
+  transition: all .3s;
+}
+
+.socials:hover {
+  transform: scale(1.3);
+}
+
+.footer-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-logo {
+  height: 380px;
+  width: auto;
 }
