@@ -192,7 +192,8 @@ header {
 
 /* **************** MY WORK SECTION **************** */
 
-.my-work-main {
+.my-work-main,
+.contact-main {
   width: 100%;
   background-color: var(--my-work-bg-color);
 }
@@ -302,4 +303,93 @@ header {
 .main-logo {
   height: 380px;
   width: auto;
+}
+
+/* ********** CONTACT ME CSS ********** */
+
+.contact-h2 {
+  font-size: 3.7rem;
+  color: var(--navbar-footer-bg);
+  padding: 7rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  display: flex;
+  padding-bottom: 14rem;
+}
+
+.contact-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.contact-message {
+  font-size: 2rem;
+  font-weight: 500;
+  width: 500px;
+  text-align: center;
+  line-height: 1.6;
+  border-bottom: 1px solid var(--navbar-footer-bg);
+  padding-bottom: 3rem;
+}
+
+.contact-use-email {
+  font-size: 2.2rem;
+  padding: 3rem 0 1.3rem 0;
+}
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.email-info-contact {
+  font-size: 2rem;
+}
+
+.contact-right>h3 {
+  font-size: 3rem;
+  color: var(--navbar-footer-bg);
+  padding-bottom: 4rem;
+}
+
+.socials-contact {
+  color: var(--navbar-footer-bg);
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.social-media {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-media-names {
+  font-size: 3rem;
+}
+
+.social-icons {
+  color: var(--navbar-footer-bg);
+  transition: all 0.3s;
+}
+
+.social-icons:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(4px 5px 10px #000000);
 }
