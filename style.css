@@ -16,7 +16,7 @@
 }
 
 header {
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   position: relative;
   z-index: 1;
@@ -226,7 +226,7 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 500px;
+  min-height: 31.5rem;
   background-color: var(--navbar-footer-bg);
 }
 
@@ -337,7 +337,7 @@ header {
 
 
 .contact-message {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 500;
   width: 500px;
   text-align: center;
@@ -347,7 +347,7 @@ header {
 }
 
 .contact-use-email {
-  font-size: 2.2rem;
+  font-size: 2rem;
   padding: 3rem 0 1.3rem 0;
 }
 
@@ -358,7 +358,8 @@ header {
 }
 
 .email-info-contact {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .contact-right>h3 {
@@ -369,7 +370,7 @@ header {
 
 .socials-contact {
   color: var(--navbar-footer-bg);
-  font-size: 4rem;
+  font-size: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -393,4 +394,58 @@ header {
 .social-icons:hover {
   transform: scale(1.2);
   filter: drop-shadow(4px 5px 10px #000000);
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 1065px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left {
+    width: 100%;
+  }
+
+  .contact-right {
+    width: 100%;
+  }
+
+  .contact-right>h3 {
+    padding-bottom: 2.5rem;
+    margin-top: 8rem;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-left {
+    width: 100%;
+    margin: 4rem 0;
+  }
+
+  .contact-me-footer>h3 {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .contact-me-footer>p {
+    text-align: center;
+  }
+
+  .email-footer {
+    justify-content: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-right {
+    width: 100%;
+    margin: 1rem 0;
+  }
 }
