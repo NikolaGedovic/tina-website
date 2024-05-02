@@ -28,7 +28,11 @@ header {
   background-color: var(--navbar-footer-bg);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 11rem;
+  position: relative;
+  z-index: 2;
+
 }
 
 .navbar-list-container {
@@ -240,7 +244,7 @@ header {
 }
 
 .contact-me-footer>p {
-  width: 18.75rem;
+  width: 300px;
   color: var(--navbar-footer-font);
   font-size: 1.1rem;
   line-height: 1.5;
@@ -248,7 +252,7 @@ header {
 }
 
 .email-footer {
-  width: 18.75rem;
+  width: 300px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -270,7 +274,7 @@ header {
 }
 
 .footer-socials {
-  width: 18.75rem;
+  width: 300px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -297,7 +301,7 @@ header {
 }
 
 .main-logo {
-  height: 23.7rem;
+  height: 380px;
   width: auto;
 }
 
@@ -335,7 +339,7 @@ header {
 .contact-message {
   font-size: 1.7rem;
   font-weight: 500;
-  width: 31.2rem;
+  width: 500px;
   text-align: center;
   line-height: 1.6;
   border-bottom: 1px solid var(--navbar-footer-bg);
