@@ -563,52 +563,62 @@ header {
   }
 }
 
-/* Adjustments for smaller screens */
 @media screen and (max-width: 500px) {
   body {
     background-size: cover;
-    /* Ensure background image covers the entire viewport */
   }
 
   .navbar {
     max-width: 100%;
-    /* Set a maximum width for the navbar */
     margin: 0 auto;
-    /* Center the navbar horizontally */
     padding: 0 1rem;
-    /* Add padding to the navbar */
   }
 
   .navbar-list-container {
     flex-direction: column;
-    /* Stack navbar items vertically */
     align-items: center;
-    /* Center navbar items horizontally */
   }
 
   .navbar-list-item {
     margin: 1rem 0;
-    /* Add vertical spacing between navbar items */
   }
 
   .nav-links {
     padding: 0.5rem 0;
-    /* Adjust padding for navbar links */
   }
 
-  /* Adjust font sizes, line heights, etc. for smaller screens */
-  /* Example: */
+
   .contact-h2 {
-    font-size: 2rem;
+    font-size: 2.3rem;
+    padding: 7rem 0 4rem 0;
   }
 
   .contact-message,
   .contact-use-email,
-  .email-info-contact,
-  .social-media-names {
+  .email-info-contact {
     font-size: 1.2rem;
     width: 100%;
     text-align: center;
+  }
+
+  .social-icons {
+    font-size: 2.2rem;
+  }
+
+  .social-media-names {
+    font-size: 1.5rem;
+  }
+
+  .contact-message {
+    padding: 0 1.25rem 2.5rem 1.25rem;
+  }
+
+  .contact-use-email {
+    padding: 2.5rem 1.25rem .8rem 1.25rem;
+  }
+
+  .contact-right>h3 {
+    font-size: 2.3rem;
   }
 }
 
