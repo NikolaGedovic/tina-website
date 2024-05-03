@@ -563,6 +563,56 @@ header {
   }
 }
 
+/* Adjustments for smaller screens */
+@media screen and (max-width: 500px) {
+  body {
+    background-size: cover;
+    /* Ensure background image covers the entire viewport */
+  }
+
+  .navbar {
+    max-width: 100%;
+    /* Set a maximum width for the navbar */
+    margin: 0 auto;
+    /* Center the navbar horizontally */
+    padding: 0 1rem;
+    /* Add padding to the navbar */
+  }
+
+  .navbar-list-container {
+    flex-direction: column;
+    /* Stack navbar items vertically */
+    align-items: center;
+    /* Center navbar items horizontally */
+  }
+
+  .navbar-list-item {
+    margin: 1rem 0;
+    /* Add vertical spacing between navbar items */
+  }
+
+  .nav-links {
+    padding: 0.5rem 0;
+    /* Adjust padding for navbar links */
+  }
+
+  /* Adjust font sizes, line heights, etc. for smaller screens */
+  /* Example: */
+  .contact-h2 {
+    font-size: 2rem;
+  }
+
+  .contact-message,
+  .contact-use-email,
+  .email-info-contact,
+  .social-media-names {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
 @media screen and (max-width: 450px) {
   .my-work-heading {
     padding: 5rem 0;
