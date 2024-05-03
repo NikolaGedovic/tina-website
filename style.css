@@ -247,6 +247,13 @@ header {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.my-work-video {
+  width: 43.75rem;
+  height: 31.25rem;
+}
+
+/* Footer */
+
 .footer {
   display: flex;
   align-items: center;
@@ -327,7 +334,7 @@ header {
 }
 
 .main-logo {
-  height: 380px;
+  height: 20rem;
   width: auto;
 }
 
@@ -475,9 +482,16 @@ header {
     width: 100%;
     margin: 1rem 0;
   }
+
+  .main-logo {
+    height: 17rem;
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 830px) {
+
+  /* Navbar Hamburger Responsiveness */
   .hamburger {
     display: block;
   }
@@ -512,5 +526,74 @@ header {
 
   .navbar-list-container.active {
     left: 0;
+  }
+
+  /* My Work Video Responsiveness */
+  .card {
+    width: 32rem;
+    height: 20rem;
+  }
+
+  .my-work-video {
+    width: 32rem;
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 565px) {
+
+  /* My Work Video Responsiveness */
+  .card {
+    width: 25rem;
+    height: 15rem;
+  }
+
+  .my-work-video {
+    width: 25rem;
+    height: 15rem;
+  }
+
+  /* Footer Logo Responsiveness */
+  .main-logo {
+    height: 16rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .my-work-heading {
+    padding: 5rem 0;
+  }
+
+  .cards {
+    gap: 6rem;
+  }
+
+  .card {
+    width: 20rem;
+    height: 12rem;
+  }
+
+  .my-work-video {
+    width: 20rem;
+    height: 12rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card {
+    width: 16rem;
+    height: 12rem;
+  }
+
+  .my-work-video {
+    width: 16rem;
+    height: 12rem;
+  }
+
+  /* Footer Logo Responsiveness */
+  .main-logo {
+    height: 14rem;
+    width: auto;
   }
 }
