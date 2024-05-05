@@ -1,6 +1,8 @@
 :root {
-  --my-work-bg-color: #f4f1de;
-  --navbar-footer-bg: #070F2B;
+  --my-work-bg-color: #e2eaeb;
+  --heading-color: #364043;
+  --main-font-color: #44565a;
+  --navbar-footer-bg: #5b7b7f;
   --navbar-footer-font: #F8F6F4;
 }
 
@@ -345,7 +347,7 @@ header {
 
 .contact-h2 {
   font-size: 3.7rem;
-  color: var(--navbar-footer-bg);
+  color: var(--heading-color);
   padding: 7rem 0;
   display: flex;
   justify-content: center;
@@ -378,17 +380,20 @@ header {
   width: 500px;
   text-align: center;
   line-height: 1.6;
-  border-bottom: 1px solid var(--navbar-footer-bg);
+  color: var(--main-font-color);
+  border-bottom: 1px solid var(--main-font-color);
   padding-bottom: 3rem;
 }
 
 .contact-use-email {
   font-size: 2rem;
+  color: var(--main-font-color);
   padding: 3rem 0 1.3rem 0;
 }
 
 .contact-email {
   display: flex;
+  color: var(--heading-color);
   align-items: center;
   gap: .5rem;
 }
@@ -400,7 +405,7 @@ header {
 
 .contact-right>h3 {
   font-size: 3rem;
-  color: var(--navbar-footer-bg);
+  color: var(--heading-color);
   padding-bottom: 4rem;
 }
 
@@ -416,14 +421,28 @@ header {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  transition: all 0.3s;
+}
+
+.social-media:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(4px 5px 10px #000000);
 }
 
 .social-media-names {
-  font-size: 2.6rem;
+  font-size: 2rem;
+  color: var(--main-font-color);
+
+}
+
+.social-media-links {
+  display: flex;
+  color: var(--main-font-color);
+  align-items: center;
+  gap: .7rem;
 }
 
 .social-icons {
-  color: var(--navbar-footer-bg);
   transition: all 0.3s;
   font-size: 3rem;
 }
@@ -452,7 +471,7 @@ header {
 
   .contact-right>h3 {
     padding-bottom: 2.5rem;
-    margin-top: 8rem;
+    margin: 8rem 0 2rem 0;
   }
 
   footer {
@@ -606,10 +625,6 @@ header {
 
   .socials-contact {
     gap: 1.2rem;
-  }
-
-  .social-icons {
-    font-size: 2.2rem;
   }
 
   .social-media-names {
