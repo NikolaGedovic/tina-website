@@ -217,8 +217,18 @@ header {
   min-width: 100%;
   min-height: 100%;
   z-index: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
   -o-filter: blur(6px);
   filter: blur(6px);
+}
+
+.desktop-video {
+  display: block;
+}
+
+.mobile-video {
+  display: none;
 }
 
 /* **************** MY WORK SECTION **************** */
@@ -512,6 +522,15 @@ header {
 }
 
 @media screen and (max-width: 830px) {
+
+  /* Home Page Background Video */
+  .desktop-video {
+    display: none;
+  }
+
+  .mobile-video {
+    display: block;
+  }
 
   /* Navbar Hamburger Responsiveness */
   .hamburger {

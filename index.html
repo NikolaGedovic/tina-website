@@ -30,8 +30,13 @@
   </head>
   <body>
     <header>
-      <video autoplay muted loop id="bg-video" class="bg-video">
+      <!-- Video for large screens -->
+      <video autoplay muted loop id="bg-video" class="bg-video desktop-video">
         <source src="/video/promo za sajt.mp4" />
+      </video>
+      <!-- Video for smaller screens -->
+      <video autoplay muted loop class="bg-video mobile-video">
+        <source src="/video/VERTIKALNI.mp4" />
       </video>
       <nav class="navbar">
         <div class="nav-left">
