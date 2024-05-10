@@ -24,3 +24,14 @@ document.querySelectorAll(".nav-links").forEach(n => n.addEventListener("click",
   // Reset the main content position when a nav link is clicked
   contentPlaceholder.style.marginTop = '0';
 }));
+
+// Toggle Button Main Page Video
+let toggleButton = document.querySelector(".btn-play-btn");
+let videoContainer = document.querySelector(".promo-video-container");
+let promoVideo = document.querySelector(".promo-video");
+
+toggleButton.onclick = function () {
+  toggleButton.style.display = "none";
+  videoContainer.style.display = "block";
+  promoVideo.style.display = "block";
+};
