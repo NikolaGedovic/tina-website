@@ -120,7 +120,7 @@ header {
 }
 
 .play-video {
-  padding-top: 8.2rem;
+  margin: 25rem auto;
 }
 
 .play-btn {
@@ -208,6 +208,10 @@ header {
     box-shadow: none;
 
   }
+}
+
+.promo-video-container {
+  display: none;
 }
 
 .bg-video {

@@ -63,3 +63,4 @@ document.querySelectorAll(".nav-links").forEach(n => n.addEventListener("click",
   // Reset the main content position when a nav link is clicked
   contentPlaceholder.style.marginTop = '0';
 }));
+
