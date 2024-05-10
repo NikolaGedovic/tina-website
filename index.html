@@ -30,14 +30,6 @@
   </head>
   <body>
     <header>
-      <!-- Video for large screens -->
-      <video autoplay muted loop id="bg-video" class="bg-video desktop-video">
-        <source src="/video/promo za sajt.mp4" />
-      </video>
-      <!-- Video for smaller screens -->
-      <video autoplay muted loop class="bg-video mobile-video">
-        <source src="/video/VERTIKALNI.mp4" />
-      </video>
       <nav class="navbar">
         <div class="nav-left">
           <img
@@ -68,30 +60,26 @@
 
       <!-- Content placeholder for main content -->
       <div id="content-placeholder"></div>
-
-      <!-- <div class="hero">
-        <div class="wrapper">
-          <h1 class="animated-text" data-text-value="TINA VUGDELIJA">
-            TINA VUGDELIJA
-          </h1>
-        </div>
-      </div> -->
-      <div class="play-video">
-        <div class="promo-video-container">
-          <iframe
-            class="promo-video"
-            src="https://www.youtube.com/embed/KKmXtBirsHA?si=pTJHBuAuXUOjMcwo"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <a class="play-btn" href="#"></a>
-      </div>
-      <div class="view-more"></div>
     </header>
+
+    <main>
+      <div class="home-background-video-container">
+        <!-- Video for large screens -->
+        <video autoplay muted loop id="bg-video" class="bg-video desktop-video">
+          <source src="/video/promo za sajt.mp4" />
+        </video>
+
+        <!-- Video for smaller screens -->
+        <video autoplay muted loop class="bg-video mobile-video">
+          <source src="/video/VERTIKALNI.mp4" />
+        </video>
+      </div>
+
+      <div class="home-promo-video">
+        <button class="btn-play-btn"></button>
+        <div class="promo-video"></div>
+      </div>
+    </main>
     <!-- JAVASCRIPT -->
     <script src="/script/script.js"></script>
   </body>
