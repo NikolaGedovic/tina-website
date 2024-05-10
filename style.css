@@ -143,7 +143,6 @@ header {
 .home-promo-video {
   width: 50rem;
   height: 33rem;
-  /* background-color: brown; */
   position: absolute;
   left: 0;
   right: 0;
@@ -201,6 +200,7 @@ header {
   background: brown;
   width: 50rem;
   height: 33rem;
+  z-index: 2;
 }
 
 .promo-video {
