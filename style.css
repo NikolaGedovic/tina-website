@@ -500,11 +500,26 @@ header {
 
 @media screen and (max-width: 830px) {
   .home-promo-video {
-    width: 30rem;
+    /* width: 30rem;
     height: 23rem;
-    /* top: 0; */
     bottom: 0;
-    margin: auto;
+    margin: auto; */
+    position: fixed;
+    /* Change position to fixed */
+    bottom: 0;
+    left: 50%;
+    /* Position at the center horizontally */
+    transform: translateX(-50%);
+    /* Center horizontally */
+    width: 30rem;
+    /* Adjust width as needed */
+    height: 23rem;
+    /* Adjust height as needed */
+    z-index: 1;
+  }
+
+  .btn-play-btn {
+    z-index: 2;
   }
 
   .promo-video-container {
@@ -583,6 +598,18 @@ header {
 }
 
 @media screen and (max-width: 565px) {
+
+  /* Home Page Video */
+
+  .promo-video-container {
+    width: 25rem;
+    height: 15rem;
+  }
+
+  .promo-video {
+    width: 25rem;
+    height: 15rem;
+  }
 
   /* My Work Video Responsiveness */
   .card {
@@ -667,6 +694,19 @@ header {
 
 
 @media screen and (max-width: 450px) {
+
+  /* Home Page Video */
+
+  .promo-video-container {
+    width: 20rem;
+    height: 12rem;
+  }
+
+  .promo-video {
+    width: 20rem;
+    height: 12rem;
+  }
+
   .my-work-heading {
     padding: 5rem 0;
   }
@@ -687,6 +727,19 @@ header {
 }
 
 @media screen and (max-width: 350px) {
+
+  /* Home Page Video */
+
+  .promo-video-container {
+    width: 16rem;
+    height: 12rem;
+  }
+
+  .promo-video {
+    width: 16rem;
+    height: 12rem;
+  }
+
   .card {
     width: 16rem;
     height: 12rem;
