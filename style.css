@@ -1,8 +1,8 @@
 :root {
-  --my-work-bg-color: #e2eaeb;
-  --heading-color: #364043;
-  --main-font-color: #44565a;
-  --navbar-footer-bg: #5b7b7f;
+  --bg-color: #e2eaeb;
+  --heading-color: #454545;
+  --main-font-color: #5d5d5d;
+  --navbar-footer-bg: #0F0F0F;
   --navbar-footer-font: #F8F6F4;
 }
 
@@ -36,6 +36,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.9);
 }
 
 /* Hamburger Menu Style  */
@@ -181,23 +182,22 @@ header {
 
 .btn-play-btn:hover {
   cursor: pointer;
-  background-color: hsla(187, 17%, 23%, 1);
+  background-color: hsla(0, 0%, 12%, 1);
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0em 0em 0em 0em hsla(187, 17%, 43%, .8);
+    box-shadow: 0em 0em 0em 0em hsla(0, 0%, 6%, .8);
   }
 
   100% {
-    box-shadow: 0em 0em 0em .3em hsla(187, 17%, 43%, 0);
+    box-shadow: 0em 0em 0em .3em hsla(0, 0%, 6%, 0);
   }
 }
 
 /* Promo Video Main Page */
 .promo-video-container {
   display: none;
-  background: brown;
   width: 50rem;
   height: 33rem;
   z-index: 2;
@@ -213,7 +213,7 @@ header {
 .my-work-main,
 .contact-main {
   width: 100%;
-  background-color: var(--my-work-bg-color);
+  background-color: var(--bg-color);
 }
 
 .my-work-heading {
@@ -222,7 +222,7 @@ header {
   align-items: center;
   padding: 7rem 0;
   font-size: 3.5rem;
-  color: var(--navbar-footer-bg);
+  color: var(--heading-color);
 }
 
 .cards {
