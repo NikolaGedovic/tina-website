@@ -709,7 +709,6 @@ header {
 @media screen and (max-width: 450px) {
 
   /* Home Page Video */
-
   .promo-video-container {
     width: 20rem;
     height: 12rem;
@@ -718,6 +717,10 @@ header {
   .promo-video {
     width: 20rem;
     height: 12rem;
+  }
+
+  .btn-play-btn {
+    font-size: 110px;
   }
 
   .my-work-heading {
