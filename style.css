@@ -106,6 +106,7 @@ header {
 .navbar-logo {
   height: 4rem;
   width: auto;
+  margin-top: .25rem;
 }
 
 /* HERO */
